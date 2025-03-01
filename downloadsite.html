@@ -8,24 +8,21 @@
         body {
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             background: #FFF8F6;
             font-family: 'Inter', sans-serif;
         }
         .container {
-            width: 90%;
+            width: 100%;
             max-width: 400px;
-            text-align: center;
+            margin: auto;
+            padding: 20px;
         }
         h1 {
-            font-size: 1.5rem;
+            font-size: clamp(1.5rem, 5vw, 2rem);
             color: #231918;
         }
         p {
-            font-size: 0.9rem;
+            font-size: clamp(0.9rem, 3vw, 1rem);
             color: #534341;
         }
         .buttons {
@@ -40,7 +37,7 @@
             align-items: center;
             height: 40px;
             border-radius: 100px;
-            font-size: 14px;
+            font-size: clamp(14px, 2vw, 16px);
             font-weight: 500;
             cursor: pointer;
             text-decoration: none;
@@ -58,13 +55,14 @@
             align-items: center;
             gap: 10px;
             margin-bottom: 20px;
+            padding: 10px;
         }
         .header svg {
             width: 24px;
             height: 24px;
         }
         .header span {
-            font-size: 16px;
+            font-size: clamp(16px, 2vw, 18px);
             font-weight: 500;
         }
     </style>
