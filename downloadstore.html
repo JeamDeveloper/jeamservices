@@ -1,106 +1,31 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeam Store</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Inter, sans-serif;
-            background: #FFF8F6;
-        }
-        .Website {
-            width: 1041px;
-            height: 1080px;
-            padding-bottom: 679px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-        .Header {
-            width: 100%;
-            height: 57px;
-            padding: 18px 20px;
-            display: flex;
-            align-items: center;
-        }
-        .Frame1 {
-            flex: 1;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .JeamStore {
-            font-size: 14px;
-            font-weight: 500;
-            color: black;
-            text-align: right;
-        }
-        .Prsentation {
-            width: 100%;
-            height: 344px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-        .Container {
-            width: 399px;
-            padding: 28px 64px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 16px;
-        }
-        .Title {
-            font-size: 24px;
-            font-weight: 500;
-            color: #231918;
-            line-height: 26.4px;
-        }
-        .Description {
-            font-size: 12px;
-            font-weight: 400;
-            color: #534341;
-            line-height: 14.4px;
-        }
-        .Button {
-            background: #904A41;
-            border-radius: 100px;
-            padding: 10px 24px;
-            color: white;
-            font-size: 14px;
-            font-weight: 500;
-            font-family: Roboto, sans-serif;
-            text-align: center;
-            cursor: pointer;
-        }
-        .Button:hover {
-            background: #7f3e36;
-        }
-    </style>
-</head>
-<body>
-    <div class="Website">
-        <div class="Header">
-            <div class="Frame1">
-                <div class="JeamStore">Jeam Store</div>
-                <div class="Menu">
-                    <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2.25 14V12.5H15.75V14H2.25ZM2.25 10.25V8.75H15.75V10.25H2.25ZM2.25 6.5V5H15.75V6.5H2.25Z" fill="#1D1B20"/>
-                    </svg>
-                </div>
-            </div>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="website">
+      <div class="prsentation">
+        <div class="container">
+          <p class="tus-favoritos-de">Tus favoritos de<br />Jeam ahora disponibles <br />en un solo lugar</p>
+          <p class="text-wrapper">
+            Al fin una plataforma oficial para descargar las apps de Jeam Studios y sus asociados, garantizando calidad,
+            seguridad y una experiencia optimizada.
+          </p>
+          <button class="button">
+            <div class="state-layer"><div class="label-text">Descargar</div></div>
+          </button>
         </div>
-        <div class="Prsentation">
-            <div class="Container">
-                <div class="Title">Tus favoritos de Jeam ahora disponibles en un solo lugar</div>
-                <div class="Description">Al fin una plataforma oficial para descargar las apps de Jeam Studios y sus asociados, garantizando calidad, seguridad y una experiencia optimizada.</div>
-                <div class="Button">Descargar</div>
-            </div>
+      </div>
+      <header class="header">
+        <div class="frame">
+          <img class="menu" src="img/menu.svg" />
+          <div class="div">Jeam Store</div>
         </div>
+      </header>
     </div>
-</body>
+  </body>
 </html>
